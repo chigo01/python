@@ -1,13 +1,10 @@
 import random
 import time
 
-from quiz.components.menu import menu
-from quiz.listofqu import throne_quest
+from quiz.components import menu
+# from quiz.listofqu import throne_quest
+
 from quiz.utils.higest_input import write_highest_score
-
-
-def operator():
-    pass
 
 
 class Qa:
@@ -69,8 +66,7 @@ class Qa:
             # where they can view their highscore
             print("Thank you for playing the Game.")
             time.sleep(3)
-            menu()
+            menu.menu_game()
 
 
-if __name__ == "__main__":
-    throne_quest.play_throne_quest()
+

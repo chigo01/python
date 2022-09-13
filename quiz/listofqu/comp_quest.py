@@ -1,5 +1,6 @@
-
-from quiz.quiz_model import Qa
+#
+# from quiz.model import quiz_model
+from quiz.model.quiz_model import Qa
 from quiz.utils.file_path import FilePath
 
 

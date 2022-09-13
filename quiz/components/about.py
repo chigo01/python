@@ -1,7 +1,7 @@
-from quiz.components.menu import menu
+from quiz.components import menu
 
 
-def about():  # Displays the about page, the instructions, and the details of the Quiz Categories.
+def about_game():  # Displays the about page, the instructions, and the details of the Quiz Categories.
 
     print("This Game was made for a Project by Robie A. Carlos")
     print()
@@ -38,7 +38,7 @@ def about():  # Displays the about page, the instructions, and the details of th
     print("---------------------------------------------------------------------- ")
     print("For suggestions and inquiries you may email me at racarlos1@up.edu.ph")
     print()
-    menu()
+    menu.menu_game()
 
 
 
