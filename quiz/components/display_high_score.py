@@ -1,4 +1,5 @@
-file__path = 'C:/Users/favou/OneDrive/Desktop\python/quiz/FILES/highscores.txt'
+# file__path = 'C:/Users/favou/OneDrive/Desktop\python/quiz/FILES/highscores.txt'
+from quiz.utils.file_path import FilePath
 
 
 def display_score():
@@ -16,7 +17,7 @@ def display_score():
     print("These are the Highscores.")
     print()
     emp_list = []
-    with open(file__path, "r") as file_score:
+    with open(FilePath.file__path('highscores'), "r") as file_score:
         # print(file_score.read())
         for file in file_score:
             score = file.split("-")
@@ -26,6 +27,8 @@ def display_score():
         print('Name: ', emp_list[i][0])
         print('Score:', emp_list[i][1])
         print('Category: ', emp_list[i][2])
+
+
 
 
 display_score()

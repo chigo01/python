@@ -1,18 +1,13 @@
 import random
+import time
 
 from quiz.components.menu import menu
-from quiz.listofqu import comp_quest
+from quiz.listofqu import throne_quest
+from quiz.utils.higest_input import write_highest_score
 
 
 def operator():
     pass
-
-
-def write_highest_score(score, game_name):
-    name = input("Please Enter Your Glorious Name: ")
-    print(name, "your score will be put in the highscore records.")
-    with open('highscores.txt', 'a') as f:
-        f.write(name + "-" + str(score) + "-" + game_name + "\n")
 
 
 class Qa:
@@ -62,7 +57,7 @@ class Qa:
                 print()
 
                 count += 1
-        if score > 12:
+        if score > 25:
             high_points()
             write_highest_score(score, game_name)
         else:
@@ -73,9 +68,9 @@ class Qa:
             print("You will now be redirected to the Main Menu.")
             # where they can view their highscore
             print("Thank you for playing the Game.")
+            time.sleep(3)
             menu()
 
 
 if __name__ == "__main__":
-    comp_quest.play_comp_tree()
-
+    throne_quest.play_throne_quest()
