@@ -57,6 +57,12 @@ class Qa:
         if score > 25:
             high_points()
             write_highest_score(score, game_name)
+            more = input("want to play more? 1 or 2: ").lower()
+            if more == '1':
+                menu.menu_game()
+            else:
+                return
+
         else:
             low_points()
             print()
@@ -67,6 +73,3 @@ class Qa:
             print("Thank you for playing the Game.")
             time.sleep(3)
             menu.menu_game()
-
-
-

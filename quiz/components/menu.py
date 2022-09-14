@@ -1,4 +1,6 @@
 from quiz.components import operator
+
+
 # from quiz.components import operator
 
 
@@ -13,8 +15,8 @@ def menu_game():  # function for menu
     print()
     print("[1] Start Game")
     print("[2] About")
-    print("[4] Highscores")
-    print("[5] Exit")
+    print("[3] Highscores")
+    print("[4] Exit")
     print()
     operator.operator_of_game()
 

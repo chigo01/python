@@ -13,7 +13,12 @@ def operator_of_game():  # function for choosing an operaiton in the main menu
     elif operand == "3":
         display_high_score.display_score()
     elif operand == "4":
-        exit()
+        exit1()
     else:
         print("Invalid Input, Please Choose again.")
         menu.menu_game()
+
+
+def exit1():  # exit function
+    print("Have a good day.")
+    quit()

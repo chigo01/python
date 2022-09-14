@@ -1,6 +1,7 @@
 # file__path = 'C:/Users/favou/OneDrive/Desktop\python/quiz/FILES/highscores.txt'
 import os
 
+from quiz.components import menu
 from quiz.utils.file_path import FilePath
 
 
@@ -27,12 +28,15 @@ def display_score():
             score = file.split("-")
             emp_list.append(score)
 
-    for i in range(len(emp_list) - 1):
+    # print(line)
+    for i in range(len(emp_list)):
         print('Name: ', emp_list[i][0])
         print('Score:', emp_list[i][1])
         print('Category: ', emp_list[i][2])
+        print('time:', emp_list[i][3])
+        print()
 
-
+    menu.menu_game()
 
 
 

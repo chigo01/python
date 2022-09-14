@@ -1,5 +1,7 @@
 #
 # from quiz.model import quiz_model
+import os
+
 from quiz.model.quiz_model import Qa
 from quiz.utils.file_path import FilePath
 
@@ -8,32 +10,32 @@ class CompQuest(Qa):
 
     @staticmethod
     def display_art():
-        # art hart
         print("	                                                           ")
 
-    print("		 _________        .-------------------.                ")
-    print("		:______.-':      :  .--------------.  :                ")
-    print("		| ______  |      | :                : |                ")
-    print("		|:______B:|      | | COMPUTER QUIZ: | |                ")
-    print("		|:______B:|      | |                | |                ")
-    print("		|:______B:|      | |  Best of LUCK  | |                ")
-    print("		|         |      | |    to you.     | |                ")
-    print("		|:_____:  |      | |                | |                ")
-    print("		|    ==   |      | :                : |                ")
-    print("		|       O |      :  '--------------'  :                ")
-    print("		|       o |      :'---...______...---'                 ")
-    print("		|       o |-._.-i___|'             |._                 ")
-    print("		|'-.____o_|   '-.   '-...______...-'  `-._             ")
-    print("		:_________:      `.____________________   `-.___.-.    ")
-    print("		                 .'.eeeeeeeeeeeeeeeeee.'.      :___:   ")
-    print("		               .'.eeeeeeeeeeeeeeeeeeeeee.'.            ")
-    print("		              :____________________________:           ")
-    print("")
-    print("")
-    print("Hello, you have chosen the Computer Category, this category revolves around basic")
-    print("knowledge regarding computers.")
-    print("Note: Remember to type in your answers correctly and be wary of the spaces.")
-    print()
+        print("		 _________        .-------------------.                ")
+        print("		:______.-':      :  .--------------.  :                ")
+        print("		| ______  |      | :                : |                ")
+        print("		|:______B:|      | | COMPUTER QUIZ: | |                ")
+        print("		|:______B:|      | |                | |                ")
+        print("		|:______B:|      | |  Best of LUCK  | |                ")
+        print("		|         |      | |    to you.     | |                ")
+        print("		|:_____:  |      | |                | |                ")
+        print("		|    ==   |      | :                : |                ")
+        print("		|       O |      :  '--------------'  :                ")
+        print("		|       o |      :'---...______...---'                 ")
+        print("		|       o |-._.-i___|'             |._                 ")
+        print("		|'-.____o_|   '-.   '-...______...-'  `-._             ")
+        print("		:_________:      `.____________________   `-.___.-.    ")
+        print("		                 .'.eeeeeeeeeeeeeeeeee.'.      :___:   ")
+        print("		               .'.eeeeeeeeeeeeeeeeeeeeee.'.            ")
+        print("		              :____________________________:           ")
+        print("")
+        print("")
+        print("Hello, you have chosen the Computer Category, this category revolves around basic")
+        print("knowledge regarding computers.")
+        print("Note: Remember to type in your answers correctly and be wary of the spaces.")
+        print()
+        # art hart
 
     @staticmethod
     def high_points():
@@ -49,6 +51,8 @@ class CompQuest(Qa):
 
 
 def play_comp_tree():
+    os.system("cls")
+    CompQuest.display_art()
     file = Qa.open_file(FilePath.file__path('compquest'))
     line = '<>======================================================<>'
 
