@@ -1,13 +1,11 @@
 # file__path = 'C:/Users/favou/OneDrive/Desktop\python/quiz/FILES/highscores.txt'
-import os
+
 
 from quiz.components import menu
 from quiz.utils.file_path import FilePath
 
 
 def display_score():
-    os.system("cls")
-
     print("          .-=========-.    ")
     print("          \*-=======-*/    ")
     print("          _|  ..=..  |_    ")
@@ -37,6 +35,3 @@ def display_score():
         print()
 
     menu.menu_game()
-
-
-

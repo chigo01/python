@@ -1,3 +1,5 @@
+import time
+
 from quiz.components import operator
 
 
@@ -18,6 +20,7 @@ def menu_game():  # function for menu
     print("[3] Highscores")
     print("[4] Exit")
     print()
+
     operator.operator_of_game()
 
 
